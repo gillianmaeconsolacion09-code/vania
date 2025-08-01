@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hey Vanii 🌷</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff9e6;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    button {
+      background-color: #ffeb3b;
+      border: none;
+      border-radius: 50%;
+      font-size: 3rem;
+      padding: 20px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    button:hover {
+      transform: scale(1.1);
+    }
+    .message {
+      margin-top: 30px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      display: none;
+      max-width: 600px;
+    }
+    audio {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="heart">💛</button>
+
+  <div class="message" id="letter">
+    <p>Hey Vanii 🌷</p>
+    <p>
+      I know things have been really hectic for u lately, and I jst wanted to check in.  
+      u've been dealing w so many school tasks, and I jst want u to know that it's okay to feel tired —  
+      u're human, not a machine. u don’t always have to be at 100%, and it’s perfectly okay to slow down sometimes.
+    </p>
+    <p>
+      please remember to take care of urself in between everything.  
+      drink enough water, eat something that makes u feel good, and if u can, get some proper rest —  
+      even if it's just a short nap. u matter too, not just ur deadlines 😚✌️
+    </p>
+    <p>
+      i may not always say much, but I see how hard u're trying, and I admire that bout u.  
+      jst know that I’m here for u — cheering u on quietly, always praying u a little bit of peace in your busiest days.  
+      don’t be too hard on yourself, okey? 🤍
+    </p>
+  </div>
+
+  <audio id="bg-music" controls autoplay loop style="display: none;">
+    <source src="your-yellow-song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    const heart = document.getElementById("heart");
+    const letter = document.getElementById("letter");
+    const music = document.getElementById("bg-music");
+
+    heart.addEventListener("click", () => {
+      letter.style.display = "block";
+      music.style.display = "block";
+      music.play();
+    });
+  </script>
+
+</body>
+</html>
